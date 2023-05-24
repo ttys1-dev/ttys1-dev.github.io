@@ -1,63 +1,71 @@
 <html>
-    <head>
-      <style>
+<head>
+    <style>
         body {
-          background: black;
-          color: #0f0;
-          margin: 0;
-          height: 100vh;
+            background: black;
+            background-image: radial-gradient(
+                    circle at center,
+                    #355E3B 0.2rem,
+                    transparent 0
+            ), radial-gradient(circle at center, #355E3B 0.2rem, transparent 0);
+            background-size: 1.3rem 1.3rem;
+            background-position: 0 0, 0.65rem 0.65rem;
+            color: #04650d;
+            margin: 0;
+            /*height: 100vh;*/
         }
+
         a {
-            color: #0f0;
+            color: #04650d;
         }
-        
+
         .container {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /*height: 100%;*/
+            margin: 2rem;
         }
-        
+
         .box {
-          padding: 0 50px 0 10px;
-          border: 2px solid #0f0;
-          border-radius: 3px;
+            background: black;
+            padding: 0 50px 0 10px;
+            border: 2px solid #04650d;
+            border-radius: 3px;
             width: 80%;
-            height: 80vh;
+            /*height: 80vh;*/
         }
-        
+
         .box h2 {
-          display: flex;
-          align-items: center;
-          gap: 2px;
+            display: flex;
+            align-items: center;
+            gap: 2px;
         }
-        
+
         @keyframes cursor-blink {
-          0% {
-            opacity: 0;
-          }
+            0% {
+                opacity: 0;
+            }
         }
-        
+
         .box h2::after {
-          content: "";
-          width: 16px;
-          height: 24px;
-          background: #0f0;
-          display: inline-block;
-          animation: cursor-blink 1.5s steps(2) infinite;
+            content: "";
+            width: 16px;
+            height: 24px;
+            background: #0f0d;
+            display: inline-block;
+            animation: cursor-blink 1.5s steps(2) infinite;
         }
-      </style>
-    </head>
-    <body>
-      <div class="container">
+    </style>
+</head>
+<body>
+<div class="container">
         <span class="box">
-          <h2>$ /dev/ttyS1 &gt;&nbsp;</h2>
-            <p>
+            <h2>$ /dev/ttyS1 &gt;&nbsp;</h2>
 
-            </p>
+            <a rel="me" href="https://infosec.exchange/@ttyS1">Fediverse</a> <a href="https://github.com/ttyS1">Code</a>
         </span>
-      </div>
-      <a rel="me" href="https://infosec.exchange/@ttyS1">Fediverse</a> <a href="https://github.com/ttyS1">Code</a>
+</div>
 
-    </body>
+</body>
 </html>
